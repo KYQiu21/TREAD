@@ -151,7 +151,7 @@ Long proteins are embedded as overlapping ProtT5 chunks and reconstructed into a
 For example, the included human ankyrin-2 sequence (`ANK2_HUMAN`; 3957 residues) can be analyzed directly:
 
 ```bash
-tread predict examples/Q01484.fasta -o ank2_results
+tread predict predict_example/Q01484.fasta -o ank2_results
 ```
 
 The default embedding settings use chunks of 1000 residues with an overlap of 100 residues. These values can be changed when needed:
