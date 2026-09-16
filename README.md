@@ -1,12 +1,12 @@
 # TREAD
 
-**TREAD** annotates tandem-repeat regions directly from protein sequences using residue-level ProtT5 embeddings and trained neural-network models.
+**TREAD** (**T**ransfer learning-based **RE**peat **A**nnotation using Protein Embe**D**dings) annotates tandem-repeat regions directly from protein sequences using residue-level ProtT5 embeddings and trained neural-network models.
 
 The command-line interface accepts single- or multi-sequence FASTA files, generates ProtT5 embeddings automatically, runs TREAD inference, and writes repeat segments, residue-wise scores, and profile plots. Users do **not** need to pre-compute embeddings or load model checkpoints manually.
 
 ## Online demos
 
-The Google Colab notebook and Hugging Face Space remain available as convenient interactive demos. The local command-line implementation is the recommended reproducible interface for analyzing user-provided FASTA files.
+The following Google Colab notebook and Hugging Face Space serve as convenient interactive demos or quick analysis. The local command-line implementation is the recommended reproducible interface for analyzing user-provided FASTA files and custom training.
 
 - Google Colab: https://colab.research.google.com/drive/1gbtb5BtevWE9vChJrYgiNW2mQSW_kN8j
 - Hugging Face Space: https://huggingface.co/spaces/kevinky/TREAD
@@ -22,11 +22,16 @@ git clone https://github.com/KYQiu21/TREAD.git
 cd TREAD
 ```
 
-Create a clean conda environment and install all dependencies:
+Create a clean conda environment:
 
 ```bash
 conda create -p /path/to/new/conda_environment python=3.10
 conda activate /path/to/new/conda_environment
+```
+
+Install all dependencies:
+
+```bash
 python -m pip install --upgrade pip
 pip install .
 ```
@@ -111,7 +116,7 @@ For all prediction options:
 tread predict --help
 ```
 
-## Long proteins
+### Long proteins
 
 Long proteins are embedded as overlapping ProtT5 chunks and reconstructed into a full-length residue-embedding matrix before TREAD inference.
 
@@ -129,7 +134,7 @@ tread predict protein.fasta \
     --embedding-overlap 100
 ```
 
-## Output files
+### Output files
 
 ### 1. `segments.tsv`
 
