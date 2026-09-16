@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tread-repeat"
+version = "0.1.0"
+description = "TREAD: supervised protein repeat annotation using residue-level ProtT5 embeddings"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Kaiyu Qiu"}
+]
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.0",
+    "transformers>=4.38,<5",
+    "sentencepiece>=0.1.99",
+    "matplotlib>=3.7",
+]
+
+[project.scripts]
+tread = "tread.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tread*"]
+
+[tool.setuptools.package-data]
+tread = ["trained_model/*.pt"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
