@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-≥3.10-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**TREAD** (**T**ransfer learning-based **RE**peat **A**nnotation using Protein Embe**D**dings) annotates tandem-repeat regions directly from protein sequences using residue-level ProtT5 embeddings and trained neural-network models.
+**TREAD** (**T**ransfer learning-based **RE**peat **A**nnotation using Protein Embe**D**dings) annotates tandem-repeat regions directly from protein sequences using residue-level ProtT5 embeddings and trained neural-network models. Check our [paper](https://www.biorxiv.org/content/10.64898/2026.05.19.725729v1.abstract).
 
 > **Sequence in → repeat annotations out**  
 > TREAD automatically generates ProtT5 embeddings, performs residue-level inference, and outputs repeat segments, residue-wise scores, and profile plots. Users do **not** need to pre-compute embeddings or load model checkpoints manually.
