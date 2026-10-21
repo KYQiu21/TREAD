@@ -40,12 +40,25 @@ git clone https://github.com/KYQiu21/TREAD.git
 cd TREAD
 ```
 
-Create a clean conda environment:
+Create a clean conda environment using either of the following methods.
+
+**Option 1: Create an environment by name (recommended)**
 
 ```bash
-conda create -p /path/to/new/conda_environment python=3.10
-conda activate /path/to/new/conda_environment
+conda create -n tread python=3.10 -y
+conda activate tread
 ```
+
+**Option 2: Create an environment at a custom path**
+
+Replace `/your/desired/path/tread` with an actual directory path where you have write permissions.
+
+```bash
+conda create -p /your/desired/path/tread python=3.10 -y
+conda activate /your/desired/path/tread
+```
+
+Both methods create an isolated Python environment. Choose one method before proceeding to installation.
 
 Install TREAD and its dependencies:
 
@@ -415,17 +428,6 @@ tread predict proteins.fasta --device cpu
 ```
 
 ProtT5 embedding is the computationally expensive step, so GPU execution is recommended for large datasets and long proteins.
-
----
-
-## 💻 Development
-
-Install TREAD in editable mode with the optional test dependency:
-
-```bash
-pip install -e ".[dev]"
-pytest
-```
 
 ---
 
