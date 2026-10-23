@@ -29,7 +29,12 @@ The online interfaces provide convenient interactive demos and quick analyses. F
 
 ## 🚀 Quick start
 
-TREAD requires **Python 3.10 or newer**. A CUDA-capable GPU is recommended for faster ProtT5 embedding, but CPU execution is fully supported.
+TREAD requires **Python 3.10 or newer**. A CUDA-capable GPU is recommended for faster ProtT5 embedding, but CPU execution is fully supported. 
+
+**Platform compatibility:** TREAD has been successfully tested
+on Linux systems. Native Windows compatibility has not been
+extensively tested and may encounter installation or runtime
+issues.
 
 ### 1. Install
 
