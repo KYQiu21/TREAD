@@ -19,7 +19,7 @@
 
 ### Try TREAD online
 
-[Google Colab](https://colab.research.google.com/drive/1gbtb5BtevWE9vChJrYgiNW2mQSW_kN8j) · [Hugging Face Space](https://huggingface.co/spaces/kevinky/TREAD)
+[Google Colab](https://colab.research.google.com/drive/1gbtb5BtevWE9vChJrYgiNW2mQSW_kN8j) · [Hugging Face Space](https://huggingface.co/spaces/kevinky/TREAD) (You may need to restart the HF space if it is not activated for a while but it only takes minutes)
 
 The online interfaces provide convenient interactive demos and quick analyses. For reproducible analysis of user-provided FASTA files and for custom training, the local command-line implementation is recommended.
 
